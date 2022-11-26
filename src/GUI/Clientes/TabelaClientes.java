@@ -38,10 +38,7 @@ public class TabelaClientes extends javax.swing.JFrame {
 
         jTable1.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
-                {null, null, null, null, null, null, null},
-                {null, null, null, null, null, null, null},
-                {null, null, null, null, null, null, null},
-                {null, null, null, null, null, null, null}
+
             },
             new String [] {
                 "ID Cliente", "Nome", "Data Nascimento", "CPF", "Email", "Telefone", "Ativo"
@@ -66,6 +63,11 @@ public class TabelaClientes extends javax.swing.JFrame {
         }
 
         button1.setLabel("Sair");
+        button1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                button1ActionPerformed(evt);
+            }
+        });
 
         jMenu1.setText("Opções");
 
@@ -100,6 +102,10 @@ public class TabelaClientes extends javax.swing.JFrame {
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void button1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_button1ActionPerformed
+        dispose();
+    }//GEN-LAST:event_button1ActionPerformed
 
     /**
      * @param args the command line arguments
